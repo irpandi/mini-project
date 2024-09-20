@@ -3,19 +3,19 @@
     "config:base"
   ],
   "automerge": true,
-  "automergeType": "branch",
-  "automergeStrategy": "green",
+  "automergeType": "pr",
   "baseBranch": "master",
   "branchPrefix": "renovate/",
   "labels": ["renovate"],
   "commitMessagePrefix": "fix: ",
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "ignorePresets": ["config:base"],
   "packageRules": [
     {
       "updateTypes": ["major", "minor", "patch"],
-      "automerge": true
+      "automerge": true,
+      "automergeType": "pr"
     }
-  ]
+  ],
+  "ignorePresets": ["config:base"]
 }
