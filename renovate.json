@@ -2,23 +2,15 @@
   "extends": [
     "config:base"
   ],
-  "automerge": true,
-  "automergeType": "pr", 
-  "automergeStrategy": "all",
-  "baseBranch": "master",
-  "commitMessagePrefix": "fix: ",
-  "prCreation": "immediate",
   "packageRules": [
     {
-      "updateTypes": ["major", "minor", "patch"],
-      "automerge": true,
-      "automergeType": "pr"
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "automerge": true
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
     }
   ],
-  "enabled": true,
-  "ignorePresets": ["config:base"],
-  "lockFileMaintenance": {
-    "enabled": true,
-    "automerge": true
-  }
+  "platformAutomerge": true
 }
