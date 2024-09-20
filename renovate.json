@@ -1,6 +1,5 @@
 {
   "automerge": true,
-  "automergeComment": "Renovate Bot Auto Merge",
-  "automergeType": "pr-comment",
+  "automergeStrategy": "fast-forward",
   "baseBranches": ["master"]
 }
