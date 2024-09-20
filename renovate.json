@@ -5,7 +5,7 @@
   "automerge": true,
   "automergeType": "pr", 
   "automergeStrategy": "all",
-  "baseBranch": "staging",
+  "baseBranch": "master",
   "commitMessagePrefix": "fix: ",
   "prCreation": "immediate",
   "packageRules": [
