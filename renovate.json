@@ -16,5 +16,9 @@
     }
   ],
   "enabled": true,
-  "ignorePresets": ["config:base"]
+  "ignorePresets": ["config:base"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  }
 }
