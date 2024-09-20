@@ -3,20 +3,18 @@
     "config:base"
   ],
   "automerge": true,
-  "automergeType": "branch",
-  "baseBranch": "master",
+  "automergeType": "pr", 
+  "automergeStrategy": "all",
+  "baseBranch": "staging",
   "commitMessagePrefix": "fix: ",
-  "prHourlyLimit": 0,
-  "prConcurrentLimit": 0,
+  "prCreation": "immediate",
   "packageRules": [
     {
       "updateTypes": ["major", "minor", "patch"],
-      "automerge": true
+      "automerge": true,
+      "automergeType": "pr"
     }
   ],
   "enabled": true,
-  "ignorePresets": ["config:base"],
-  "recreateClosed": true,
-  "automergeStrategy": "all",
-  "prCreation": "immediate"
+  "ignorePresets": ["config:base"]
 }
