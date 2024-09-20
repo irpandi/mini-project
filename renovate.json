@@ -3,19 +3,20 @@
     "config:base"
   ],
   "automerge": true,
-  "automergeType": "pr",
+  "automergeType": "branch",
   "baseBranch": "master",
-  "branchPrefix": "renovate/",
-  "labels": ["renovate"],
   "commitMessagePrefix": "fix: ",
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "packageRules": [
     {
       "updateTypes": ["major", "minor", "patch"],
-      "automerge": true,
-      "automergeType": "pr"
+      "automerge": true
     }
   ],
-  "ignorePresets": ["config:base"]
+  "enabled": true,
+  "ignorePresets": ["config:base"],
+  "recreateClosed": true,
+  "automergeStrategy": "all",
+  "prCreation": "immediate"
 }
