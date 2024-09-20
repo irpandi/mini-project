@@ -1,5 +1,21 @@
 {
+  "extends": [
+    "config:base"
+  ],
   "automerge": true,
-  "automergeStrategy": "fast-forward",
-  "baseBranches": ["master"]
+  "automergeType": "branch",
+  "automergeStrategy": "green",
+  "baseBranch": "master",
+  "branchPrefix": "renovate/",
+  "labels": ["renovate"],
+  "commitMessagePrefix": "fix: ",
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
+  "ignorePresets": ["config:base"],
+  "packageRules": [
+    {
+      "updateTypes": ["major", "minor", "patch"],
+      "automerge": true
+    }
+  ]
 }
