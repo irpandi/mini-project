@@ -2,6 +2,7 @@
   "extends": [
     "config:base"
   ],
+  "baseBranch": "master",
   "packageRules": [
     {
       "matchUpdateTypes": ["major", "minor", "patch"],
